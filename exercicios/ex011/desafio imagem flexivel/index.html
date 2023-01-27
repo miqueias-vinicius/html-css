@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio imagem flexível</title>
+</head>
+<body>  <!-- 1080 widght / 800 / 500-->
+    <h1>Imagem flexível</h1>
+    <h2>Você está vendo a imagem completa? experimente ampliar o tamanho da sua janela para melhor experiência</h2>
+    <picture> <!--A tag picture permite utilizar a tag souce mediatype pra tornar as imagens flexíveis-->
+        <source media="(max-width: 850px)" srcset="imagens/tam-p.png" type="image/png"> <!--utilizar 50+px do tamanho normal da imagem no max-width-->
+        <source media="(max-width: 1100px)" srcset="imagens/tam-m.png" type="image/png">
+        <img src="imagens/tam-g.png" alt="Imagem flexível">
+    </picture>   
+    
+</body>
+</html>

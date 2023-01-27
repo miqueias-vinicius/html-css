@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(238, 255, 234);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#header-container {
+    background-color: rgba(7, 83, 58, 0.726);    
+    text-align: center;     
+    min-height: 50px;
+    max-width: 1950px;
+}
+#header-container .title {
+    padding-top: 15px;
+    font-family: 'Aboreto', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;    
+
+}
+#header-container .title a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.menu {
+    background: linear-gradient(to right, rgb(204, 110, 110), transparent);
+    font-family: 'Secular One', sans-serif;
+    font-size: 13px;
+    padding: 5px;    
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    box-shadow: 0px 3px 3px 0px #00000030;
+ 
+    
+}
+.menu a{
+    text-decoration: none;
+    color: rgb(168, 93, 93);
+    padding: 0px 30px 0px 30px;
+    transition-duration: 0.2s; 
+
+}
+.menu a:hover {
+    background: linear-gradient(to bottom, rgb(204, 110, 110), transparent);   
+    border-radius: 3px;
+    font-weight: bolder;   
+      
+
+}
+
+main {
+    background-color: rgb(255, 255, 255);
+    max-width: 1000px;
+    margin: 0 auto;
+    min-width: 300px;
+    line-height: 1.4;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.295);
+    
+    
+}
+main .article {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 30px;
+    text-align: justify;  
+    
+      
+}
+main .article .title1 {
+    font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+    margin-bottom: 20px;    
+    
+}
+main .article .subtitulo {
+    font-size: 18px;
+    margin-bottom: 25px;
+    text-indent: 25px;
+}
+main .container-perfume-text {
+    border: 1px solid rgba(134, 134, 134, 0.568);
+    background-color: rgb(255, 238, 238);
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.295);
+    margin: 10px;
+    padding: 15px;    
+}
+.container-perfume-text a{
+    text-decoration: none;
+    color: black
+}
+.container-perfume-text a:hover{
+    text-decoration: underline;
+}
+
+.paragraph {
+    text-indent: 25px;
+    
+}
+main .article .title2 {
+    font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
+    text-align: left;
+    padding: 10px;
+    font-size: 20px;    
+}
+footer {
+    background-color: rgba(7, 83, 58, 0.726);
+    font-size: 14px;
+    color: white;
+    padding: 5px;   
+    position: fixed;
+    bottom:0;
+    left:0;
+    width: 100%;
+    text-align: center;
+}
+footer a{
+    text-decoration: none;
+    color: white;    
+}
+footer a:hover {
+    text-decoration: underline;
+}

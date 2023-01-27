@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+    <picture> <!--A tag picture permite utilizar a tag souce mediatype pra tornar as imagens flexíveis-->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png"> <!--utilizar 50+px do tamanho normal da imagem no max-width-->
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>   
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+
+    <audio preload="auto" controls loop> <!--controls serve pra aparecer o botao de play, e loop pra musica ficar repetindo quando encerrar-->
+        <!--preload serve pra escolher qual carregamento do som, auto automatico ou metadata pra um leve carregamento-->
+        <source src="midia/We Wish You A Merry Christmas - DJ Williams.mp3" type="audio/mpeg">
+        <source src="midia/We Wish You A Merry Christmas - DJ Williams.mp3" type="audio/ogg">
+        <source src="midia/We Wish You A Merry Christmas - DJ Williams.mp3" type="audio/mav">
+        <p>Infelizmente seu navegador não é compatível para a reprodução do áudio. <a href="midia/Musica natal.zip.zip" download="midia/Musica natal.zip" type="application/zip">Clique aqui</a> para baixar o arquivo ZIP</p>
+    </audio>
+    <audio preload="metadata" controls loop>
+        <source src="midia/musica-02.mp3" type="audio/mpeg">
+        <p>Infelizmente seu navegador não é compatível para a reprodução desse áudio. <a href="midia/musica-02.zip"  type="application/zip">Clique aqui</a> para baixar o arquivo ZIP</p>
+    </audio>
+    <p>Colocar a tag &lt;audio&gt; e dentro dela inserir a tag src pra colocar a mídia e type pra qual tipo de audio</p>    
+</body>
+</html>

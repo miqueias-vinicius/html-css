@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(240, 221, 199);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+h1 {
+    color: rgb(37, 37, 37);
+    background-color: rgb(238, 132, 71);
+    padding: 2.5px;
+
+}
+h2 {
+    color:rgb(80, 58, 58);
+
+}
+/* id = ao símbolo de # no CSS/ class = ao símbolo . no CSS*/
+h1#principal { 
+    text-align: center;
+    background-image: linear-gradient(to right, rgb(255, 120, 35), rgb(255, 50, 20));
+    color: white;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    height: auto;
+    width: 500px;
+    box-shadow: 2px 2px 5px rgba(173, 83, 27, 0.651) ;
+
+}
+.basico {
+    color: rgb(27, 143, 27);
+
+}
+.intermediario {
+    color: rgb(148, 150, 24)
+}
+.avançado {
+    color: rgb(170, 44, 44)
+}
+.destaque {
+    background-color: rgba(141, 60, 141, 0.534);
+}
