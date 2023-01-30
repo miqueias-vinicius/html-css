@@ -11,6 +11,7 @@
 html, body {
     min-height: 100vh;
     background-color: darkgray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
 
@@ -29,7 +30,7 @@ header .titulo {
     font-variant: small-caps;
 }
 header .subtitulo {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
     color: white;
     text-align: center;
@@ -46,9 +47,28 @@ header a:hover {
     text-decoration: underline;
 }
 
+main p {
+    padding-bottom: 1.5em;
+}
+
 .normal, .imagem {
     padding-top: 10vh;
     padding-bottom: 10vh;
+
+}
+main .imagem .content {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    padding-right: 5px;
+   
+}
+
+main .content {
+    line-height: 2em;
+    padding-left: 5px;
+    font-family: 'Sriracha';
+    font-size: 2em;
+    margin-left: 15px;
 }
 
 main .normal {
@@ -58,8 +78,20 @@ main .normal {
 main .imagem {
     background-color: rgb(56, 56, 56);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.527);
 }
 
+main #img01 {
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+main #img02 {
+    background-image: url(../imagens/background002.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
 
 footer {
     background-color: black;
@@ -68,7 +100,7 @@ footer {
 
 footer .text-footer {
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 8px;
 }
 
