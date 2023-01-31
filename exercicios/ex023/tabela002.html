@@ -12,6 +12,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
 
         }
         caption {
@@ -27,6 +28,14 @@
         thead, tfoot {
             background-color: gray;
             color: white;
+        }
+        thead tr th{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+        tbody tr:nth-child(2n){
+            background-color: rgb(214, 214, 214);
         }
         tr .num {
             text-align: right;
@@ -95,6 +104,29 @@
                 <td>Minas Gerais</td>
                 <td class="num">20 777 098</td>
             </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num">6 763 346</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">65 245 024</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">437 091</td>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">51 245 024</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="num">42 366 098</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">88 113 064</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
@@ -112,6 +144,8 @@
         <p>TBODY = tr, td, th</p>
         <p>TFOOT = tr, td, th</p>
         <p>SCOPE = col: relacionado a coluna, row: relacionado a mesma linha </p>
-    
+    <h3>TAG para efeito zebrado</h3>
+        <p>É uma pseudo-classe, que coloca após a tag tr:<br><code>tbody tr:nth-child(2n ou odd ou even) {}</code></p>
+
 </body>
 </html>

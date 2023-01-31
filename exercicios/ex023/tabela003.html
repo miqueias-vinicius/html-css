@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+            width: 300px;
+        }
+        tr td {
+            border: 1px solid black;
+            padding: 7px;
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Mesclagem de células</h1>
+    <table>
+        <tr>
+            <td>A</td>
+            <td colspan="2">B</td>
+
+        </tr>
+        <tr>
+            <td rowspan="3">D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+        <tr>
+
+            <td>H</td>
+            <td>I</td>
+        </tr>
+        <tr>
+
+            <td>L</td>
+            <td>M</td>
+        </tr>
+    </table>
+    <h2>Anotações</h2>
+    <h3>tag de mesclagem aplicada diretamente dentro da tag &lt;td&gt;:</h3>
+    <p><code>colspan="2"</code> !-- Para a célula preencher 2 espaços em linha --!</p>
+    <p><code>rowspan="3"</code> !-- Para a célula preencher 3 espaços em coluna --!</p>
+</body>
+</html>
