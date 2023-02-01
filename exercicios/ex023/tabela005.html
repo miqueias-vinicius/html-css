@@ -4,104 +4,92 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabela Completa 2</title>
+    <title>Exercício de tabelas</title>
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
         table {
-            width: 400px;
             border-collapse: collapse;
+            width: 500px;
         }
         caption {
-            background-color: black;
-            color: white;
-            text-align: 1.2em;
+            font-size: 1.2em;
+            font-weight: bold;
             padding: 5px;
-            font-weight: bolder;
         }
-        thead {
-            background-color: gray;
-            color: white;
-        }
-        th, td {
+        tr, th, td {
             border: 1px solid black;
             padding: 5px;
+            
         }
-        tbody .result {
-            text-align: left;
-            background-color: gray;
-            color: white;
-            font-weight: bold;
+
+        colgroup .cnome {
+            background-color: aqua;
         }
-        tbody .num {
-            text-align: center;
+        colgroup .csexo {
+            background-color: rgb(82, 252, 4);
+        }
+        colgroup .cidade{
+            background-color: rgb(194, 4, 252);
+        }
+        colgroup .cprof {
+            background-color: rgb(252, 4, 4);
         }
     </style>
 </head>
-<body>    
+<body>
+    <h1>Exercício de Tabela</h1>
     <table>
-        <caption>Tabela de Notas</caption>
-        <thead>
-            <tr>
-                <th rowspan="2">Área</th>
-                <th rowspan="2">Disciplinas</th>
-                <th colspan="2">Notas</th>
-                <th rowspan="2">Média</th>
-            </tr>
-            <tr>
-                <th>Nota 1</th>
-                <th>Nota 2</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th rowspan="4">Exatas</th>
-                <td>Matemática</td>
-                <td class="num">0.0</td>
-                <td class="num">0.0</td>
-                <td class="num">0.0</td>
-            </tr>
-            <tr>
-                <td>Física</td>
-                <td class="num">0.0</td>
-                <td class="num">0.0</td>
-                <td class="num">0.0</td>
-            </tr>
-            <tr>
-                <td>Química</td>
-                <td class="num">0.0</td>
-                <td class="num">0.0</td>
-                <td class="num">0.0</td>
-            </tr>
-            <tr>
-                <td>Biologia</td>
-                <td class="num">0.0</td>
-                <td class="num">0.0</td>
-                <td class="num">0.0</td>
-            </tr>
-            <tr class="result">
-                <th colspan="4">Média de Exatas</th>
-                <td class="num">0.0</td>
-            </tr>
-            <tr>
-                <th rowspan="2">Humanas</th>
-                <td>História</td>
-                <td class="num">0.0</td>
-                <td class="num">0.0</td>
-                <td class="num">0.0</td>
-            </tr>
-            <tr>
-                <td>Geografia</td>
-                <td class="num">0.0</td>
-                <td class="num">0.0</td>
-                <td class="num">0.0</td>
-            </tr>
-            <tr class="result">
-                <th colspan="4">Média de Humanas</th>
-                <td class="num">0.0</td>
-            </tr>
-        </table>  
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprof">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Claúdio</td>
+            <td>M</td>
+            <td>28</td>
+            <td>Programador</td>
+        </tr>
+        <tr>
+            <td>Gustavo</td>
+            <td>M</td>
+            <td>42</td>
+            <td>Professor</td>
+        </tr>
+        <tr>
+            <td>Hélio</td>
+            <td>M</td>
+            <td>19</td>
+            <td>Vendedor</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>F</td>
+            <td>39</td>
+            <td>Médica</td>
+        </tr>
+        <tr>
+            <td>Otávio</td>
+            <td>M</td>
+            <td>22</td>
+            <td>Nutricionista</td>
+        </tr>
     </table>
 </body>
 </html>
