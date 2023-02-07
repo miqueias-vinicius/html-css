@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Meu formulário</h1>
+    <form action="cadastro.php">
+        <div class="num1">
+            <label for="num1i">Número 1:</label>
+            <input type="number" name="num1" id="num1i" max="10" min="1" required value="0" oninput="somai.innerHTML = Number(num1i.value) + Number(num2i.value)">
+        </div>
+        <div class="num2">
+            <label for="num2i">Número 2:</label>
+            <input type="number" name="num2" id="num2i" max="10" min="1" required value="0" oninput="somai.innerHTML = Number(num1i.value) + Number(num2i.value)">
+        </div>
+        <div class="soma">
+            <label for="somai">Soma:</label>
+            <output name="soma" id="somai">0</output>
+        </div>
+
+
+        <div class="sub-res">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+</html>
