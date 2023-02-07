@@ -10,11 +10,11 @@
 </head>
 <body>
     <h1>Exemplo de Formulário</h1>
-    <form action="cadastro.php" method="post">
+    <form action="cadastro.php" method="post" autocomplete="off">
         <div class="estado">
             <label for="estado-id">Estado:</label>
-            <select name="estado" id="estado-id">
-                <option value="">--Escolha--</option>
+            <select name="estado" id="estado-id" required>
+                <option value="" disabled selected>--- Escolha ---</option>
                 <optgroup label="Sudeste">
                     <option value="MG">Minas Gerais</option>
                     <option value="RJ">Rio de Janeiro</option>
@@ -29,13 +29,17 @@
         </div>
         <div class="prof">
             <label for="prof-id">Profissão:</label>
-            <input type="text" name="prof" id="prof-id" list="lstprof">
+            <input type="text" name="prof" id="prof-id" list="lstprof" required>
             <datalist id="lstprof">
                 <option>Administrador</option>
                 <option>Barbeiro</option>
                 <option>Piloto</option>
                 <option>Cozinheiro</option>
             </datalist>
+        </div>
+        <div class="textarea">
+            <label for="txtid">Mensagem:</label><br>
+            <textarea name="txt" id="txtid" cols="30" rows="10" maxlength="180" placeholder="Insira sua mensagem..." style="resize: none;"></textarea>
         </div>
         <div class="sub-res">
             <input type="submit" value="Enviar">
