@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+body {
+    font-family: 'Times New Roman', Times, serif, monospace;
+    background-color: aliceblue;
+    font-size: 1.3em;
+    text-align: justify;
+    line-height: 1.3em;
+}
+ul {
+    list-style: none;
+    text-decoration: none;
+}
+nav li {
+    text-align: center;
+    display: inline-block;
+    padding: 40px;
+}
+article::after {
+    content: 'Artigo impresso através do site teste.com.br';
+}
